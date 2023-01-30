@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yos.mp3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&family=Manrope:wght@200;300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/mp3plyer.css">
+</head>
+<body>
+    <audio src=" " id="audio"></audio>
+    <div class="music-player">
+        <h1>Yoselin Escudero</h1>
+        <h1>NUE:147688</h1>
+        <h2 class="music-name">Song 1</h2>
+        <p class="artist-name">Artist</p>
+
+        <div class="disk"></div>
+
+        <div class="song-slider">
+
+            <input type="range" min="0" class="seek-bar">
+            <span class="current-time"></span>
+            <span class="song-duration"></span>
+       </div>
+       <div class="controls">
+        <button class="btn backward-btn">
+            <img src="./images/pre.png" alt="">
+        </button>
+        <button class="play-btn pause">
+            <span></span>
+            <span></span>
+        </button>
+        <button class="btn forward-btn">
+            <img src="./images/nxt.png" alt="">
+        </button>
+       </div>
+    </div>
+    <script src="./Js/data.js"></script>
+    <script src="./Js/app.js"></script>
+</body>
+</html>
