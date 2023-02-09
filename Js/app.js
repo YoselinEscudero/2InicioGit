@@ -67,7 +67,7 @@ setInterval(() => {
 //Funciones para adelante y atras
 
 forwardBtn.addEventListener('click',() => {
-    if(currentMusic >= songs.length -1){
+    if(currentMusic >= songs.length - 1){
         currentMusic = 0
 
     }else{
@@ -77,3 +77,22 @@ forwardBtn.addEventListener('click',() => {
     playMusic()
 
 })
+
+backwardBtn.addEventListener('click',() => {
+    if(currentMusic <= 0 ){
+        currentMusic = songs.length - 1
+
+    }else{
+        currentMusic--
+    }
+    setMusic(currentMusic)
+    playMusic()
+
+})
+
+const playMusic = () => {
+    music.play()
+    playBtn.classList.remove('pause')
+    disk.classList.add('play')
+
+}
