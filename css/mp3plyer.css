@@ -13,19 +13,19 @@ body{
     align-items: center;
 }
 .music-player{
-    display: flex;
     width: 350px;
-    height: 650px;
-    flex-direction: column;
-    width: 350px;
-    height: 550px;
+    height: 600px;
     background-color: violet;
     border-radius: 20px;
-    justify-content: center;
-    align-items: center;
-    color: beige;
+    box-shadow: 0 40px 100px rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    color: beige ;
     overflow: hidden;
 
+}
+h1{
+    text-align: center;
+    color: cyan;
 }
 .music-name, .artist-name{
     text-align: center;
@@ -88,7 +88,7 @@ body{
     box-shadow: -400px 0 0 400px blue;
 }
 
-.current-time, song-duration{
+.current-time, .song-duration{
     font-size: 14px;
 }
 
@@ -114,7 +114,7 @@ body{
     cursor:pointer;
     border: none;
 }
-.play-btn span{
+.play-btn span {
     position: absolute;
     top: 50%;
     left: 25%;
@@ -124,12 +124,10 @@ body{
     border-radius: 2px;
     background-color: green;
     transition: 0.05s;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     
-
-
-
 }
-.play-btn span: :nth-child(2){
+.play-btn span :nth-child(2){
     left: 55%;
     transform-origin:center;
 
@@ -148,14 +146,14 @@ body{
     animation: pulse 2s linear infinite;
 }
 @keyframes pulse {
-    0%{
+    0% {
         box-shadow: 0;
     }
-    50%{
-        box-shadow: 0 0 0 5px rgba(255,255, 255, 0.1);
+    50% {
+        box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.1);
     }
-    10%{
-        box-shadow: 0 0 0 5px rgba(255,255, 255, 0.4);
+    100% {
+        box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.4);
     }
 }
 
@@ -167,14 +165,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border:none;
+    border: none;
     cursor: pointer;
 }
-@keyframes rotate{
-    0%{
+@keyframes rotate {
+    0% {
         transform: rotate(0);
     }
-    100%{
+    100% {
         transform: rotate(360deg);
     }
 }
